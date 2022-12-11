@@ -8,16 +8,16 @@ const router = express.Router();
 
 
 // geting post
-router.get('/', (getPost))
+router.get('/', getPost)
 
 // create post
-router.post('/', (createPost))
+router.post('/', createPost)
 
 // updating post
-router.put('/', (updatePost))
+router.put('/:id', updatePost)
 
 // deleting post 
-router.delete('/', (deletePost))
+router.delete('/:id', deletePost)
 
 
 module.exports = router;
